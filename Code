@@ -1,0 +1,25 @@
+namespace ConsoleApp3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double yakitFiyati, yol, tuketim, sonuc;
+
+
+            Console.Write("Lütfen yakıt fiyatını giriniz: ");
+            yakitFiyati = double.Parse(Console.ReadLine());
+
+            Console.Write("Lütfen yol uzaklığını giriniz: ");
+            yol = double.Parse(Console.ReadLine());
+
+            Console.Write("Lütfen aracınızı 100 kilometrede kaç litre yaktığını giriniz: ");
+            tuketim = double.Parse(Console.ReadLine());
+
+            sonuc = (yol / 100) * tuketim * yakitFiyati;
+            Console.WriteLine("Aracınızın toplam yakıt tüketimi: "+sonuc);
+
+
+        }
+    }
+}
